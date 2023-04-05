@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="body">
     <Routes>
-      <Route path='/' Component={Body}></Route>
+      <Route path='/weatherforecasts' Component={Body}></Route>
     </Routes>
       
     </div>
