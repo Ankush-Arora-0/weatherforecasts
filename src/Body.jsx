@@ -14,7 +14,7 @@ const Body=()=>{
 
     useEffect(()=>{
         const fetchA=async()=>{
-            const res= await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${inp}&limit=5&appid=0ed9fe0d175aa1a46a1f6304f7c4c396`);
+            const res= await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${inp}&limit=5&appid=0ed9fe0d175aa1a46a1f6304f7c4c396`);
             const res2= await res.json();
               setLat(res2[0].lat);
               setLon(res2[0].lon);
@@ -35,7 +35,7 @@ const Body=()=>{
     }
     const searc= ()=>{
         const fetchB=async()=>{
-        const res3 = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=0ed9fe0d175aa1a46a1f6304f7c4c396`);
+        const res3 = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=0ed9fe0d175aa1a46a1f6304f7c4c396`);
         const res4 = await res3.json();
         console.log(res4);
         const res5 = (res4.main.temp-272.15).toFixed(2)
