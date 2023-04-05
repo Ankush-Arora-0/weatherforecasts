@@ -18,6 +18,7 @@ const Body=()=>{
             const res2= await res.json();
               setLat(res2[0].lat);
               setLon(res2[0].lon);
+            console.log(inp);
               
             }
         fetchA();
