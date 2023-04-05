@@ -23,7 +23,7 @@ const Body=()=>{
             }
         fetchA();
        
-    },[inp])
+    })
     
         
     
